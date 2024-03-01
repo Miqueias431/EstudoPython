@@ -7,6 +7,7 @@
 
 ```py
 print("Olá, eu sou um arquivo escrito em Python")
+
 ```
 
 ### Arquivo boasvindas.py
@@ -19,6 +20,7 @@ print("Olá, "+nome+". Seja bem vindo!")
 print("Escreva o seu novo nome de usuário.")
 nome = input("Digite aqui:")
 print("O seu novo usuário é: "+nome)
+
 ```
 
 ### Arquivo desvioif.py
@@ -38,6 +40,7 @@ if(numero % 2 == 0):
     print("O número digitado é Par")
 else:
     print("O número digitado é Impar")
+
 ```
 ### Arquivo desvioif2.py
 
@@ -58,6 +61,7 @@ elif( rs <= 4 ):
     print("Reprovado")
 else:
     print("Recuperação")
+
 ```
 
 ## Aula 02
@@ -85,5 +89,27 @@ match digito:
         print("Sábado")
     case _:
         print("Valor incorreto. Tente outra vez")
-        
+
+```
+
+### Arquivo rodizio.py
+
+```py 
+print("Este programa analisa os valores digitados de 0 à 9 e diz o dia da semana que você não pode rodar com o carro")
+digito = input("Digite o final da placa: ")
+
+match digito:
+    case '1' | '2':
+        print("Seu carro não pode rodar na Segunda-Feira")
+    case '3' | '4':
+        print("Seu carro não pode rodar na Terça-Feira")
+    case '5' | '6':
+        print("Seu carro não pode rodar na Quarta-Feira")
+    case '7' | '8':
+        print("Seu carro não pode rodar na Quinta-Feira")
+    case '9 | 0':
+        print("Seu carro não pode rodar na Sexta-Feira")
+    case _:
+        print("Valor incorreto. Tente outra vez")
+
 ```
