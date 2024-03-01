@@ -1,6 +1,8 @@
 # Estudo Python 
 <img src="https://ictslab.com/wp-content/uploads/2019/03/d1326ca6cca8038cd115a061b4e2b3bc-840x430.png"  width="400" height="200">
 
+## Aula 01
+
 ### Arquivo mensagem.py
 
 ```py
@@ -56,4 +58,32 @@ elif( rs <= 4 ):
     print("Reprovado")
 else:
     print("Recuperação")
+```
+
+## Aula 02
+
+### Arquivo match1.py
+
+```py
+print("Este programa analisa os valores digitados de 0 à 6 e diz o dia da semana")
+digito = input("Entre com um número de 0 à 6: ")
+
+match digito:
+    case '0':
+        print("Domingo")
+    case '1':
+        print("Segunda-Feira")
+    case '2':
+        print("Terça-Feira")
+    case '3':
+        print("Quarta-Feira")
+    case '4':
+        print("Quinta-Feira")
+    case '5':
+        print("Sexta-Feira")
+    case '6':
+        print("Sábado")
+    case _:
+        print("Valor incorreto. Tente outra vez")
+        
 ```
