@@ -113,3 +113,44 @@ match digito:
         print("Valor incorreto. Tente outra vez")
 
 ```
+
+### Arquivo for1.py
+
+```py
+# Para realizar a contagem de  1 até 10 é necessario 
+# fazer uso de uma estrutura chamada range e 
+# citar os valores 1 até 11. O range nunca conta
+# o valor de parada, Neste caso o valor 11
+
+for i in range(1,11):
+    print(i)
+
+```
+
+### Arquivo for2.py
+
+```py
+# faça uma contagem de um até 300 exibindo apenas
+# os números multiplos de 4
+
+for i in range(1,301):
+    if (i % 4 == 0):
+        print(i)
+
+```
+
+### Arquivo for3.py
+
+```py
+n = [1,54,12,63,74,13,9,25,7,32]
+for i in n:
+    print(i)
+
+```
+
+### Arquivo calculo_cpf.py
+
+```py
+
+
+```
