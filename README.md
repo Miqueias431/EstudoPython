@@ -300,3 +300,38 @@ import os
 print(os.getcwd())
 print(os.curdir)
 ```
+
+### Arquivo funcao1.py
+
+```py
+def soma(valores):
+    rs = 0
+    for i in valores:
+        rs+=i
+    return rs
+
+num = [5,8,4,7]
+print(soma(num))
+```
+
+### Arquivo funcao2.py
+
+```py
+def desconto(preco = 0.0, taxa = 0.0):
+    """A função desconto ralizao o calculo 
+    de desconto recebendo o valor de preço
+    de um produto e multiplica pelo valo
+    da taxa e exibe o resultado em tela ao
+    final
+    """
+    vl_desc = preco * (taxa / 100)
+    vl_fin = preco - vl_desc
+    print(f"O valor de desconto é: {vl_desc}\nE o valor final é: {vl_fin}")
+    
+desconto(800,7)
+```
+
+### Arquivo funcao3.py
+
+```py
+```
