@@ -241,5 +241,62 @@ if(cpf_usuario==cpf_calc):
     print("CPF é Válido")
 else:
     print("CPF inválido")
-    
+
+```
+
+### arquivo1.py
+
+```py
+# Open é uma função que permite ler um arquivo
+# ler ou escrever neste arquivo
+arq = open("dados.txt",'a')
+
+
+# A função write, permite escrever em um arquivo
+arq.write("Olá\n")
+
+
+# A função close fecha o arquivo retirando-o da
+# memória
+arq.close()
+```
+
+### arquivo2.py
+
+```py
+nome_arquivo = input("Digite o arquivo: ")
+extensao_arquivo = input("Digite a extenção do arquivo: ")
+conteudo = input("Digite o conteúdo do arquivo: ")
+
+arq = open(nome_arquivo+"."+extensao_arquivo,"a")
+arq.write(conteudo)
+arq.close()
+```
+
+### arquivo3.py
+
+```py
+arq = open("pagina.html",'r')
+# print(arq.read())
+# print(arq.readline())
+print(arq.readlines())
+arq.close()
+```
+
+### arquivo4.py
+
+```py
+import os
+
+os.rename("primeiro.html","index.html")
+print("O arquivo foi alterado")
+```
+
+### arquivo5.py
+
+```py
+import os
+
+print(os.getcwd())
+print(os.curdir)
 ```
